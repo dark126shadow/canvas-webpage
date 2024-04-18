@@ -1,0 +1,605 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    perspective: 800;
+}
+#main{
+   
+    overflow: hidden;
+}
+.button2{
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    margin-top: -18px;
+    margin-left: -45px;
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;
+    z-index: 98;
+}
+.button2 button{
+    padding:10px 20px;
+    border-radius: 50px;
+    background-color: #0942E3;
+    border: 1px solid white;
+    color: white;
+    font-family: a;
+    font-size: 13px;
+   
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+   
+}
+#page1>video{
+    height: 100%;
+    width:100%;
+
+    object-fit: cover;
+}
+#page1>nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    position:fixed;
+    height: 10vh;
+    width: 100vw;
+    
+    margin-left: -5%;
+
+z-index: 99;
+}
+#page1 nav img{
+    margin-top: -3vw;
+    height: 100%;
+    width: 9%;
+    z-index: 99;
+
+}
+.yo{
+
+    padding:10px 20px;
+    border-radius: 50px;
+    background-color: #0942E3;
+    border: 1px solid white;
+    color: white;
+    font-family: a;
+    font-size: 13px;
+    
+
+}
+.bottom-page1{
+
+    position:absolute;
+    height:30vh;
+    width: 50vw;
+    bottom:5%;
+    left: 15%;
+    z-index: 99;
+}
+.bottom-page1 h1{
+    font-size: 5vw;
+    font-weight: 100;
+    line-height: 1;
+    color: white;
+}
+.bottom-page1inner{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+}
+.bottom-page1inner h3{
+    font-size: 25px;
+  color: white;
+  font-weight: 100;
+}
+.bottom-page1inner button{
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: rgb(2, 61, 255);
+    border: 1px solid white;
+}
+#page2{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: rgb(2, 61, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page2 h4{
+    margin-top: -30%;
+    margin-left: -53%;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+.para{
+    position: absolute;
+    margin-top: -4%;
+    padding: 0px 4vw;
+
+}
+.para p{
+    color: rgba(255, 255, 255, 0.299);
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 1.3;
+}
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page3>canvas{
+    max-height: 100vh;
+    max-width: 100vw;
+    position: relative;
+}
+.page4{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: rgb(2, 61, 255);
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.page4 h4{
+   margin-top: -22%;
+   margin-bottom: 30px;
+    margin-left: 7%;
+    color:white;
+    font-size : 20px;
+    font-weight: 100;
+    
+}
+.page4 h1{
+    margin-left: 7%;
+    color: rgba(255, 255, 255, 0.299);
+    font-size: 65px;
+    margin-bottom: -15%;
+    font-weight: 100;
+}
+.page5{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.page5 canvas{
+    max-width: 100vw;
+    max-height: 100vh;
+    position: relative;
+}
+.page6{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: rgb(2, 61, 255);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.page6 h4{
+    color:white;
+    margin-top: -15%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 100;
+}
+.page6 h1{
+    color: rgba(255, 255, 255, 0.299);
+    margin-left: 10%;
+    font-weight: 100;
+    font-size: 60px;
+}
+.page7{
+    position:relative;
+    height :100vh;
+    width:100vw;
+    background-color:#0942E3;
+    z-index: 98;
+}
+.page7 canvas{
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+    z-index: -99;
+}
+.cir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 30vh;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color:transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+    z-index: 99;
+    position: absolute;
+}
+.cirin{
+    height: 50%;
+    width: 50%;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.page8{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color:#093DCC;
+    
+}
+.page8 video{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+.page8in{
+    position: absolute;
+    bottom:5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 99;
+}
+.page8in h1{
+    font-size: 100px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: white;
+}
+.page8in button{
+    padding:20px 50px;
+    background-color: white;
+    color:#093DCC;
+    border-radius: 50px;
+}
+.page9{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    background-color:#093DCC;
+    gap:50px
+}
+.page9 img{
+    position: relative;
+    object-fit: cover;
+    height: 65%;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+.page9 h1{
+    color:white;
+    font-size: 100px;
+    font-weight: 100;
+    margin-top: 150px;
+    margin-left: 120px;
+}
+.page10{
+    height: 100vh;
+    width:100vw;
+    position: relative;
+    background-color:#093DCC;
+    display: flex;
+}
+.left{
+    width:30%;
+    height: 100%;
+    background-color:#093DCC;
+}
+.right{
+    width:70%;
+    height: 100%;
+    background-color:#093DCC;
+}
+.right1{
+    height:28%;
+    width:90%;
+    background-color:#093DCC;
+    position: relative;
+}
+.right2{
+    height:28%;
+    width:90%;
+    background-color:#093DCC;
+    position: relative;
+}
+.right3{
+    height:28%;
+    width:90%;
+    background-color:#093DCC;
+    position: relative;
+}
+.right1 h2{
+    color:white;
+    font-size: 100;
+    margin-bottom: 20px;
+}
+.right1 p{
+    color:rgba(255, 255, 255, 0.729);
+    font-size: 25px;
+}
+.right2 h2{
+    color:white;
+    font-size: 100;
+    margin-bottom: 20px;
+}
+.right2 p{
+    color:rgba(255, 255, 255, 0.729);
+    font-size: 25px;
+}
+.right3 h2{
+    color:white;
+    margin-top: 20px;
+    font-size: 100;
+    margin-bottom: 20px;
+}
+.right3 p{
+    color:rgba(255, 255, 255, 0.729);
+    font-size: 25px;
+}
+.page11{
+    height: 120vh;
+    width: 100vw;
+    position: relative;
+    background-color: white;
+}
+.page11 h1{
+    font-size: 100px;
+    font-weight: 100;
+    margin-top: 7%;
+    margin-left: 7%;
+    margin-bottom: 60px;
+}
+.page11in{
+    width: 100vw;
+    height:100vh;
+    position: relative;
+
+    z-index: 99;
+    display: flex;
+}
+.left11{
+    height: 100%;
+    width: 50%;
+position: relative;
+
+}
+.right11{
+    height: 100%;
+    width: 50%;
+position: relative;
+}
+.card1{
+    height: 25%;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 100px;
+    background-size: cover;
+    background-position: centre;
+    object-fit: cover;
+    background-color: aqua;
+    border-radius: 40px;
+    overflow:hidden
+}
+.card2{
+    height: 25%;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 100px;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    border-radius: 40px;
+}
+.card3{
+    height: 25%;
+    width: 80%;   
+     margin-top: 20px;
+    margin-left: 100px;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+}
+.card1 img{
+    object-fit: cover;
+   height: 100%;
+   width: 100%;
+   position: relative;
+   transition: all ease 0.5s;
+}
+.card1 img:hover{
+    scale:1.1;
+}
+.card2 img{
+    object-fit: cover;
+   height: 100%;
+    width: 100%;
+    transition: all ease 0.5s;
+}
+.card2 img:hover{
+    scale:1.1;
+}
+
+.card3 img{
+    object-fit: cover;
+  height: 100%;
+   width: 100%;
+   transition: all ease 0.5s;
+}
+.card3 img:hover{
+    scale:1.1;
+}
+.right111{
+    height: 28%;
+    width:90%;
+
+}
+.right112{
+    height: 28%;
+    width:90%;
+}
+.right113{
+    height: 28%;
+    width:90%;
+
+}
+.right11 h4{
+ color: rgb(91, 91, 91);
+ font-weight: 100;
+
+}
+.right111 h4{
+    padding-top: 60px;
+    margin-bottom: 10px;
+}
+.right112 h4{
+    padding-top: 60px;
+    margin-bottom: 10px;
+}
+.right113 h4{
+    padding-top: 60px;
+    margin-bottom: 10px;
+}
+.page12{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #02268E;
+}
+.page12 h1{
+    color: white;
+    font-size: 100px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    margin-top: -10%;
+
+}
+.page12 p{
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+}
+.feature{
+    height: 100%;
+    margin-left: 50%;
+    opacity: 0;
+   display: flex;
+   flex-direction: column;
+justify-content: center;
+}
+.scroller {
+    position: absolute;
+    margin-top: -13%;
+    z-index: 99;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+ 
+
+}
+.scroller img{
+ 
+    height: 50px;
+    margin:20px;
+}
+  .scroller::-webkit-scrollbar {
+    display: none;
+  }
+  .scroller1 {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+    z-index: 10;
+    gap: 40px;
+  }
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  .page13{
+    height: 50vh;
+    width: 100vw;
+    background-color: black;
+    padding: 30px 100px;
+  }
+  .page13 h1{
+    color:white;
+    font-size: 110px;
+    font-weight: 100;
+    
+  }
+  .page13 button{
+    padding:10px 30px;
+    border-radius: 50px;
+    background-color: #0942E3;
+    color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 13px;
+  }
+  .page14{
+    height: 70vh;
+    width: 100vw;
+    position: relative;
+    background-color: black;
+  }
+  .page14in{
+    display: flex;
+ align-items: center;
+ padding: 0px 30px;
+    height: 33%;
+    width: 100%;
+position: relative;
+    color:white;
+    font-weight: 100;
+    border-top: .5px solid rgba(255, 255, 255, 0.491);
+
+
+  }
+  .page14in h1{
+    z-index: 99;
+    position: relative;
+  }
+  .fill14{
+    height: 0%;
+    width: 100%;
+    background-color: #02268E;
+    position:absolute;
+    left:0%;
+    transition: all ease 0.5s;
+  }
+  .page14in:hover .fill14{
+    height:100%
+  }
