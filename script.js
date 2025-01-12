@@ -41,14 +41,7 @@ document.querySelector(".para>p").textContent.split("").forEach(function(dets){
 })
 
 gsap.to(".para p span",{
-    scrollTrigger: {
-      trigger:".para p span",
-      scroller: "#main",
-      start: "top bottom",
-      end: "bottom 40%",
-
-      scrub:1
-    },
+   
     stagger: .2,
     color: "#fff",
 
